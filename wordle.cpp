@@ -47,8 +47,10 @@ void backtrack(const std::string& currString, const std::string& in, const std::
     if (in[currString.size()] != '-') {
       backtrack(currString + in[currString.size()], in, floating, out);
     }
-    for (char nextLetter = 'a'; nextLetter < 'z' + 1; ++nextLetter) {
-      backtrack(currString + nextLetter, in, floating, out);
+    else {
+      for (char nextLetter = 'a'; nextLetter < 'z' + 1; ++nextLetter) {
+        backtrack(currString + nextLetter, in, floating, out);
+      }
     }
   }
 }
