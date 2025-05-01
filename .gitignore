@@ -1,4 +1,7 @@
+hw5/hw5_tests/cmake_install.cmake
+hw5/hw5_tests/wordle_tests
 *.o
 hw5_tests/
 wordle-driver
 schedwork-driver
+dict-eng.txt
